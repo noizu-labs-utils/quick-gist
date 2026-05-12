@@ -21,8 +21,8 @@ A fast, ergonomic CLI wrapper around `gh gist` with interactive file picking via
 Copy the `quick-gist` script somewhere on your `$PATH`:
 
 ```bash
-cp quick-gist /usr/local/bin/quick-gist
-chmod +x /usr/local/bin/quick-gist
+cp quick-gist ~/.local/bin/quick-gist
+chmod +x ~/.local/bin/quick-gist
 ```
 
 ## Usage
