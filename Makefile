@@ -10,5 +10,4 @@ test:
 
 install:
 	@mkdir -p $(INSTALL_DIR)
-	cp quick-gist $(INSTALL_DIR)/
-	chmod +x $(INSTALL_DIR)/quick-gist
+	install -m 755 quick-gist $(INSTALL_DIR)/quick-gist
