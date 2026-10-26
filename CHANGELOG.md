@@ -1,5 +1,10 @@
 # Changelog — Portfolio/Utilities/source/quick-gist
 
+## 2026-10-26
+- PR #1 merged (regular develop→main): Utilities-era working-copy docs twin-landing reconciled — doc path references aligned to `Portfolio/Utilities/source/quick-gist`
+- PR #1 review fixes (gemini-code-assist): base-10 forced in `parse_size` and interactive account selection (`10#`) so leading-zero sizes/answers no longer trip octal parsing
+- PR #1 review fixes (gemini-code-assist): `is_binary` detection pattern `.` → `^` so text files containing only newlines are no longer misclassified as binary
+
 ## [Unreleased]
 - No committed changes since last milestone (working tree has uncommitted script/doc updates not yet reflected here)
 

@@ -85,7 +85,7 @@ parse_size() {
             M) multiplier=$((1024 * 1024)) ;;
             G) multiplier=$((1024 * 1024 * 1024)) ;;
         esac
-        printf '%s\n' "$((number * multiplier))"
+        printf '%s\n' "$((10#$number * multiplier))"
     else
         return 1
     fi
@@ -205,8 +205,8 @@ choose_account() {
         done
         printf '> ' >/dev/tty
         read -r answer </dev/tty || die "Account selection cancelled."
-        [[ "$answer" =~ ^[0-9]+$ ]] && ((answer >= 1 && answer <= ${#discovered[@]})) || die "Invalid account selection."
-        selected="${discovered[answer - 1]}"
+        [[ "$answer" =~ ^[0-9]+$ ]] && ((10#$answer >= 1 && 10#$answer <= ${#discovered[@]})) || die "Invalid account selection."
+        selected="${discovered[10#$answer - 1]}"
     fi
     account="$selected"
 }
@@ -321,7 +321,7 @@ copy_stdin() {
 }
 
 is_binary() {
-    LC_ALL=C grep -Iq . "$1" 2>/dev/null
+    LC_ALL=C grep -Iq '^' "$1" 2>/dev/null
     [[ $? -eq 1 ]]
 }
 
