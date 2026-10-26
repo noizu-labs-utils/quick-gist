@@ -1,4 +1,4 @@
-# Changelog — utilities/shell/quick-gist
+# Changelog — Portfolio/Utilities/source/quick-gist
 
 ## [Unreleased]
 - No committed changes since last milestone (working tree has uncommitted script/doc updates not yet reflected here)

@@ -4,7 +4,7 @@
 
 `quick-gist` is a self-contained bash CLI that wraps GitHub CLI (`gh gist`) with explicit account ownership, reliable result reporting, filtered interactive file selection via `fzf`, and incremental large-file-safe uploads. It follows a dispatch-style architecture: parse flags, resolve a personal account, collect/preflight files, then dispatch to list, create, or append behavior.
 
-It lives in the Noizu Infra monorepo under `utilities/shell/` alongside the other terminal DevOps tools, but is deliberately self-contained: unlike most siblings it does **not** source the shared `share/k8-lib/` shell library and has no `.infra-config.yaml` build/deploy metadata — there is nothing to build or deploy. See [Ecosystem Fit](#ecosystem-fit).
+It lives in the Noizu Infra monorepo at `Portfolio/Utilities/source/quick-gist` alongside the other terminal DevOps tools, but is deliberately self-contained: unlike most siblings it does **not** source the shared `share/k8-lib/` shell library and has no `.infra-config.yaml` build/deploy metadata — there is nothing to build or deploy. See [Ecosystem Fit](#ecosystem-fit).
 
 ## Dependencies
 
@@ -71,7 +71,7 @@ Gists default to **secret**. Precedence (highest wins):
 
 ## Ecosystem Fit
 
-Part of the Noizu `utilities/` family installed to `~/.local/bin` (repo-root `make install-utilities` covers the utilities tree; this package also ships its own `Makefile` whose `install` target copies the script to `~/.local/bin`, skipping when source and destination resolve to the same file). `compile`/`test` targets are no-ops kept for uniform Make interfaces across utilities. No k8s, Infisical, or `.infra-config.yaml` coupling — the only external state it touches is the user's `gh` auth.
+Part of the Noizu `Portfolio/Utilities` family installed to `~/.local/bin` (repo-root `make install-utilities` covers the utilities tree; this package also ships its own `Makefile` whose `install` target copies the script to `~/.local/bin`, skipping when source and destination resolve to the same file). `compile`/`test` targets are no-ops kept for uniform Make interfaces across utilities. No k8s, Infisical, or `.infra-config.yaml` coupling — the only external state it touches is the user's `gh` auth.
 
 ## Design Decisions
 
