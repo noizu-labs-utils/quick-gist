@@ -1,5 +1,7 @@
 # quick-gist
 
+<!-- 〚📁:9c5e5e2a-83f1-5422-a19b-ffd7536db5dc〛 quick-gist README :: Install, usage, flags, and QUICK_GIST_* environment reference for the quick-gist CLI. -->
+
 A fast, ergonomic CLI wrapper around `gh gist` with interactive file picking via [fzf](https://github.com/junegunn/fzf).
 
 ## Features

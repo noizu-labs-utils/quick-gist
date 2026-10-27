@@ -1,5 +1,7 @@
 # Project Layout
 
+<!-- 〚📁:48ad11d7-ed75-5601-8167-871754780a06〛 quick-gist PROJ-LAYOUT :: Repository structure map and key-file descriptions. -->
+
 ```
 quick-gist/
 ├── quick-gist                  # CLI script (bash) — main executable, single-file tool

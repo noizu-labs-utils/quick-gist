@@ -1,5 +1,8 @@
 # Changelog — Portfolio/Utilities/source/quick-gist
 
+## 2026-10-27
+- Doc sweep: minted doc-pointer anchors (full-UUID 📁 file markers) for README, PROJ-ARCH/LAYOUT/FAQ/HOWTO, and the large-files how-to; store at `.meta/pointers.yaml`
+
 ## 2026-10-26
 - PR #1 merged (regular develop→main): Utilities-era working-copy docs twin-landing reconciled — doc path references aligned to `Portfolio/Utilities/source/quick-gist`
 - PR #1 review fixes (gemini-code-assist): base-10 forced in `parse_size` and interactive account selection (`10#`) so leading-zero sizes/answers no longer trip octal parsing
