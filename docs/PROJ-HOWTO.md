@@ -1,5 +1,7 @@
 # quick-gist — How To
 
+<!-- 〚📁:1c1b8573-e10b-5035-978b-eac879a5d448〛 quick-gist PROJ-HOWTO :: Task-oriented how-to guides for quick-gist. -->
+
 Task-oriented guides for the things you'll actually do with `quick-gist`. For
 what it is, see [PROJ-ARCH.md](PROJ-ARCH.md); for where files live, see
 [PROJ-LAYOUT.md](PROJ-LAYOUT.md).

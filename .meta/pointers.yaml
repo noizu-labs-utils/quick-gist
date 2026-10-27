@@ -1,0 +1,74 @@
+---
+pointers:
+  1c1b8573-e10b-5035-978b-eac879a5d448:
+    created_at: 2026-10-27T05:18:16.977274Z
+    description: Task-oriented how-to guides for quick-gist.
+    file_path: docs/PROJ-HOWTO.md
+    function: quick-gist PROJ-HOWTO
+    kind: file
+    line: 3
+    locations:
+      - file_path: docs/PROJ-HOWTO.md
+        line: 3
+    token: 𔅭𓜏𓱌𔌘
+    updated_at: 2026-10-27T05:18:16.977274Z
+  48ad11d7-ed75-5601-8167-871754780a06:
+    created_at: 2026-10-27T05:18:16.977242Z
+    description: Repository structure map and key-file descriptions.
+    file_path: docs/PROJ-LAYOUT.md
+    function: quick-gist PROJ-LAYOUT
+    kind: file
+    line: 3
+    locations:
+      - file_path: docs/PROJ-LAYOUT.md
+        line: 3
+    token: 𓛢𓿤𓁻𓀖
+    updated_at: 2026-10-27T05:18:16.977242Z
+  9c5e5e2a-83f1-5422-a19b-ffd7536db5dc:
+    created_at: 2026-10-27T05:18:16.977277Z
+    description: Install, usage, flags, and QUICK_GIST_* environment reference for the quick-gist CLI.
+    file_path: README.md
+    function: quick-gist README
+    kind: file
+    line: 3
+    locations:
+      - file_path: README.md
+        line: 3
+    token: 𔇸𔄼𓾽𔀼
+    updated_at: 2026-10-27T05:18:16.977277Z
+  c0d7c4a5-12da-5a62-b058-e15ba894689f:
+    created_at: 2026-10-27T05:18:16.977280Z
+    description: 'Architecture overview: dependencies, execution flow, ownership/upload/visibility models.'
+    file_path: docs/PROJ-ARCH.md
+    function: quick-gist PROJ-ARCH
+    kind: file
+    line: 3
+    locations:
+      - file_path: docs/PROJ-ARCH.md
+        line: 3
+    token: 𔕨𔎧𓮇𓍯
+    updated_at: 2026-10-27T05:18:16.977280Z
+  c73b18da-d680-54a6-b34a-29d47392ad3e:
+    created_at: 2026-10-27T05:18:16.977261Z
+    description: Motivation and design FAQ for quick-gist.
+    file_path: docs/PROJ-FAQ.md
+    function: quick-gist PROJ-FAQ
+    kind: file
+    line: 3
+    locations:
+      - file_path: docs/PROJ-FAQ.md
+        line: 3
+    token: 𓤀𓱮𓬶𓪮
+    updated_at: 2026-10-27T05:18:16.977261Z
+  cc7631d1-b53c-551e-818f-f372fcf2bc4a:
+    created_at: 2026-10-27T05:18:16.977270Z
+    description: Incremental upload and oversized-file chunk-splitting guide.
+    file_path: docs/howto/large-files-and-chunking.md
+    function: quick-gist large-files-and-chunking howto
+    kind: file
+    line: 1
+    locations:
+      - file_path: docs/howto/large-files-and-chunking.md
+        line: 1
+    token: 𔅕𔊽𓶩𔙪
+    updated_at: 2026-10-27T05:18:16.977270Z

@@ -1,5 +1,7 @@
 # quick-gist — FAQ
 
+<!-- 〚📁:c73b18da-d680-54a6-b34a-29d47392ad3e〛 quick-gist PROJ-FAQ :: Motivation and design FAQ for quick-gist. -->
+
 Anticipated why/when/compared-to-what questions. For *what it is*, see
 [PROJ-ARCH.md](PROJ-ARCH.md); for *how to do things*, see
 [PROJ-HOWTO.md](PROJ-HOWTO.md).

@@ -1,5 +1,7 @@
 # Project Architecture
 
+<!-- 〚📁:c0d7c4a5-12da-5a62-b058-e15ba894689f〛 quick-gist PROJ-ARCH :: Architecture overview: dependencies, execution flow, ownership/upload/visibility models. -->
+
 ## Overview
 
 `quick-gist` is a self-contained bash CLI that wraps GitHub CLI (`gh gist`) with explicit account ownership, reliable result reporting, filtered interactive file selection via `fzf`, and incremental large-file-safe uploads. It follows a dispatch-style architecture: parse flags, resolve a personal account, collect/preflight files, then dispatch to list, create, or append behavior.

@@ -1,3 +1,5 @@
+<!-- 〚📁:cc7631d1-b53c-551e-818f-f372fcf2bc4a〛 quick-gist large-files-and-chunking howto :: Incremental upload and oversized-file chunk-splitting guide. -->
+
 ## How to: gist large files without one giant upload hiding a failure
 
 **Goal:** upload text files that exceed a single-request-friendly size, get each
