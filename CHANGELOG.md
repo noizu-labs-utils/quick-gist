@@ -1,6 +1,7 @@
 # Changelog — Portfolio/Utilities/source/quick-gist
 
 ## 2026-10-27
+- Doc sweep: PROJ-LAYOUT/PROJ-ARCH refreshed (standalone-repo location, full docs tree); PROJ-SCHEMA + THREAT-MODEL authored with summaries
 - Doc sweep: minted doc-pointer anchors (full-UUID 📁 file markers) for README, PROJ-ARCH/LAYOUT/FAQ/HOWTO, and the large-files how-to; store at `.meta/pointers.yaml`
 
 ## 2026-10-26

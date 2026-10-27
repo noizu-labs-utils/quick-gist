@@ -6,7 +6,7 @@
 
 `quick-gist` is a self-contained bash CLI that wraps GitHub CLI (`gh gist`) with explicit account ownership, reliable result reporting, filtered interactive file selection via `fzf`, and incremental large-file-safe uploads. It follows a dispatch-style architecture: parse flags, resolve a personal account, collect/preflight files, then dispatch to list, create, or append behavior.
 
-It lives in the Noizu Infra monorepo at `Portfolio/Utilities/source/quick-gist` alongside the other terminal DevOps tools, but is deliberately self-contained: unlike most siblings it does **not** source the shared `share/k8-lib/` shell library and has no `.infra-config.yaml` build/deploy metadata — there is nothing to build or deploy. See [Ecosystem Fit](#ecosystem-fit).
+It is a standalone repository (`github.com/noizu-labs-utils/quick-gist`), also registered in the Noizu monorepo's `Projects/` submodule layer as `Projects/quick-gist-utils` (its historical home was `Portfolio/Utilities/source/quick-gist`). It is deliberately self-contained: it does **not** source the shared `share/k8-lib/` shell library and has no `.infra-config.yaml` build/deploy metadata — there is nothing to build or deploy. See [Ecosystem Fit](#ecosystem-fit).
 
 ## Dependencies
 
@@ -73,7 +73,7 @@ Gists default to **secret**. Precedence (highest wins):
 
 ## Ecosystem Fit
 
-Part of the Noizu `Portfolio/Utilities` family installed to `~/.local/bin` (repo-root `make install-utilities` covers the utilities tree; this package also ships its own `Makefile` whose `install` target copies the script to `~/.local/bin`, skipping when source and destination resolve to the same file). `compile`/`test` targets are no-ops kept for uniform Make interfaces across utilities. No k8s, Infisical, or `.infra-config.yaml` coupling — the only external state it touches is the user's `gh` auth.
+A Noizu terminal DevOps utility installed to `~/.local/bin` (its own `Makefile` ships `install` — copying the script there, skipping when source and destination resolve to the same file — plus `test`, which runs the mocked regression suite; the `compile` target is a no-op kept for uniform Make interfaces across utilities). No k8s, Infisical, or `.infra-config.yaml` coupling — the only external state it touches is the user's `gh` auth.
 
 ## Design Decisions
 
@@ -83,3 +83,9 @@ Part of the Noizu `Portfolio/Utilities` family installed to `~/.local/bin` (repo
 - **Secret by default** — safe default; public requires explicit opt-in
 - **Best-effort clipboard** — supports macOS (`pbcopy`), Wayland (`wl-copy`), and X11 (`xclip`); the printed URL is always authoritative
 - **Failure is never success-colored** — every mutating `gh` call is checked explicitly despite Bash's error-mode edge cases
+
+## See Also
+
+- [PROJ-LAYOUT.md](PROJ-LAYOUT.md) — components ↔ files mapping
+- [PROJ-SCHEMA.md](PROJ-SCHEMA.md) — configuration, interface, and artifact schemas (no relational store)
+- [THREAT-MODEL.md](THREAT-MODEL.md) — attack surface and vulnerability register
